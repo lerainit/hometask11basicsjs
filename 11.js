@@ -1,6 +1,8 @@
 const form = document.querySelector('form');
 
 const inputs = document.querySelectorAll('input')
+const input1 = document.querySelector('#input-1')
+const input2 = document.querySelector('#input-2')
 const removeMessage = (elem) => elem.remove();
 
 form.addEventListener('click', (e) => {
@@ -20,10 +22,6 @@ form.addEventListener('click', (e) => {
 form.addEventListener('submit', (e) => {
 
 	e.preventDefault()
-
-	let input1 = document.querySelector('#input-1')
-
-	let input2 = document.querySelector('#input-2')
 
 	input1.value === input2.value && input1.value && input2.value ? alert('You are welcome') : document.body.insertAdjacentHTML('beforeend', '<p class="red">Потрібно ввести однакові значення</p>');
 
