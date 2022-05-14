@@ -8,10 +8,8 @@ const removeMessage = (elem) => elem.remove();
 form.addEventListener('click', (e) => {
 
 	let target = e.target
-	
-	if(target.tagName != "I") return;
 
-	target.type === "password" ? target.type = "text" : target.type = "password";
+	target.type === "password" && target.tagName === 'I' ? target.type = "text" : target.type = "password";
 
 	target.classList.toggle('active');
 
