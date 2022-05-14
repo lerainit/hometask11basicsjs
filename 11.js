@@ -6,7 +6,7 @@ const input2 = document.querySelector('#input-2')
 const removeMessage = (elem) => elem.remove();
 
 form.addEventListener('click', (e) => {
-         e.stopPropagation();
+        
 	let target = e.target
 
 	target.type === "password" ? target.type = "text" : target.type = "password";
