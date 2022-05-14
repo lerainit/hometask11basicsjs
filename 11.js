@@ -9,7 +9,7 @@ form.addEventListener('click', (e) => {
 
 	let target = e.target
 
-	target.type === "password" && target.tagName === 'I' ? target.type = "text" : target.type = "password";
+	target.type === "password" ? target.type = "text" : target.type = "password";
 
 	target.classList.toggle('active');
 
