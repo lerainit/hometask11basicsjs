@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <script defer src="11.js"></script>
+    <title>Homework-buttons</title>
+    <style>
+      .password-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .input-wrapper {
+        position: relative;
+				width: 200px;
+			 
+      }
+
+      .input-wrapper input {
+        min-width: 120px;
+        padding: 10px;
+        margin-bottom: 24px;
+      }
+
+      .input-wrapper i {
+        position: absolute;
+        right: 25px;
+        top: 30px;
+        color: grey;
+      }
+
+			.btn{
+				width: 150px;
+			}
+
+      .fas.fa-eye-slash.icon-password{
+
+        display: block;
+      }
+      .fas.fa-eye.icon-password.active{
+
+        display: block;
+      }
+ .fas.fa-eye.icon-password{
+
+  display: none ;
+ }
+.fas.fa-eye-slash.icon-password.active{
+
+display: none;
+
+}
+
+.red{
+
+  color: red;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <form  class="password-form" action="#" type="POST">
+			<label class="input-wrapper">
+				Ввести пароль
+				<input  id = "input-1"  type="password"/>
+        <i id = "button1" data-after = "#icon-after"  class="fas fa-eye icon-password"></i>
+         <i data-after = "#button1" id = "icon-after" class="fas fa-eye-slash icon-password"></i> 
+			</label>
+      <label class="input-wrapper">
+				Подтвердить пароль
+        <input  id = "input-2"   type="password"/>
+        <i  id = "button2" data-after = "#icon2-after" class="fas fa-eye icon-password"></i>
+				 <i  data-after = "#button2" id = "icon2-after" class="fas fa-eye-slash icon-password"></i> 
+			</label>
+			<button type="submit" class="btn">Подтвердить</button>
+    </form>
+  </body>
+</html>
