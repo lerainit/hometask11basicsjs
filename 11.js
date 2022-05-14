@@ -9,7 +9,7 @@ form.addEventListener('click', (e) => {
 
 	let target = e.target
 	
-	if(target.tagName !== "I"){return}
+	if(target.tagName !== "I") return;
 
 	target.type === "password" ? target.type = "text" : target.type = "password";
 
