@@ -35,5 +35,5 @@ form.addEventListener('submit', (e) => {
 		})
 	}
 
-	form.reset()
+	//form.reset()
 })
