@@ -31,8 +31,8 @@ form.addEventListener('submit', (e) => {
 
 	if (redMessage) {
 		inputs.forEach(input => {
-			input.addEventListener('focus', () => removeMessage(redMessage))
-			input.removeEventListener('focus', () => removeMessage(redMessage))
+			input.addEventListener('focus', () => removeMessage(redMessage));
+			input.removeEventListener('focus', () => removeMessage(redMessage));
 
 		})
 	}
