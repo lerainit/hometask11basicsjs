@@ -23,11 +23,11 @@ form.addEventListener('submit', (e) => {
 
 	e.preventDefault()
 
-		const redMessage = document.querySelector('.red')
+	  const redMessage = document.querySelector('.red')
 
 	input1.value === input2.value && input1.value && input2.value ? alert('You are welcome') : redMessage.classList.add('active');
 
-const redActiveMessage = document.querySelector('.red.active')
+          const redActiveMessage = document.querySelector('.red.active')
 
 	if (redActiveMessage) {
 		inputs.forEach(input => {
