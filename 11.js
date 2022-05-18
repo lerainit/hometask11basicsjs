@@ -23,14 +23,16 @@ form.addEventListener('submit', (e) => {
 
 	e.preventDefault()
 
-	input1.value === input2.value && input1.value && input2.value ? alert('You are welcome') : document.body.insertAdjacentHTML('beforeend', '<p class="red">Потрібно ввести однакові значення</p>');
+		const redMessage = document.querySelector('.red')
 
-	const redMessage = document.querySelector('.red')
+	input1.value === input2.value && input1.value && input2.value ? alert('You are welcome') : redMessage.classList.add('active');
 
-	if (redMessage) {
+const redActiveMessage = document.querySelector('.red.active')
+
+	if (redActiveMessage) {
 		inputs.forEach(input => {
-			input.addEventListener('focus', () => removeMessage(redMessage));
-			input.removeEventListener('focus', () => removeMessage(redMessage));
+			input.addEventListener('focus', () => redActiveMessage.classList.remove('active'));
+			input.removeEventListener('focus', () => redActiveMessage.classList.remove('active'));
 
 		})
 	}
